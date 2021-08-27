@@ -183,7 +183,7 @@ class Loja(object):
         """
         Checa se nome do cliente esta no arquivo csv.
         :param nome_cliente: nome do cliente
-        :return: True (se nome na lista)/ False (se nome nao esta na lista)
+        :return: True (se nome na lista)/ False (se nome nao estiver na lista)
         """
         with open('clientes.csv', 'r', encoding='utf-8') as arquivo:
             leitura = csv.DictReader(arquivo)
@@ -210,7 +210,7 @@ class Loja(object):
                 print('Hora inexistente. Verifique hora digitada novamente')
             elif 'does not match format' in str(erro):
                 print('Padrão Data/Hora inválidos.\n'
-                      'Por favor coloque extamente no padrao: "dd/mm/yyyy H".')
+                      'Por favor coloque exatamente no padrao: "dd/mm/yyyy H".')
             else:
                 print(erro)
             return False
