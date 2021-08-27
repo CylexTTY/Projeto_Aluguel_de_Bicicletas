@@ -210,7 +210,7 @@ class Loja(object):
                 print('Hora inexistente. Verifique hora digitada novamente')
             elif 'does not match format' in str(erro):
                 print('Padrão Data/Hora inválidos.\n'
-                      'Por favor coloque extamente no padrao: "dd/mm/yyyy H".')
+                      'Por favor coloque exatamente no padrao: "dd/mm/yyyy H".')
             else:
                 print(erro)
             return False
